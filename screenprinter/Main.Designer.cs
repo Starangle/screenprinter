@@ -30,6 +30,7 @@
         {
             this.MainMenu = new System.Windows.Forms.MenuStrip();
             this.SettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FullScreenButton = new System.Windows.Forms.Button();
             this.MainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,11 +52,22 @@
             this.SettingsToolStripMenuItem.Text = "设置";
             this.SettingsToolStripMenuItem.Click += new System.EventHandler(this.SettingsToolStripMenuItem_Click);
             // 
+            // FullScreenButton
+            // 
+            this.FullScreenButton.Location = new System.Drawing.Point(39, 65);
+            this.FullScreenButton.Name = "FullScreenButton";
+            this.FullScreenButton.Size = new System.Drawing.Size(131, 36);
+            this.FullScreenButton.TabIndex = 1;
+            this.FullScreenButton.Text = "全屏";
+            this.FullScreenButton.UseVisualStyleBackColor = true;
+            this.FullScreenButton.Click += new System.EventHandler(this.FullScreenButton_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.FullScreenButton);
             this.Controls.Add(this.MainMenu);
             this.MainMenuStrip = this.MainMenu;
             this.Name = "Main";
@@ -72,6 +84,7 @@
 
         private System.Windows.Forms.MenuStrip MainMenu;
         private System.Windows.Forms.ToolStripMenuItem SettingsToolStripMenuItem;
+        private System.Windows.Forms.Button FullScreenButton;
     }
 }
 
