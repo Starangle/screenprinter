@@ -21,5 +21,11 @@ namespace screenprinter
         {
 
         }
+
+        private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Settings settings = new Settings();
+            settings.Show();
+        }
     }
 }
